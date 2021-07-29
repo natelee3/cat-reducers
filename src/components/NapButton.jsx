@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { actionNap } from "../actions";
+import { actionSetActivity } from "../actions";
 
 const NapButton = props => (
     <>
@@ -12,7 +12,7 @@ const NapButton = props => (
 function mapDispatchToProps(dispatch) {
     return {
         handleClick: () => {
-            dispatch(actionNap());
+            dispatch(actionSetActivity('napping'));
         }
     }
 }

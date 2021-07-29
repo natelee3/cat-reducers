@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { actionPlay } from '../actions';
+import { actionSetActivity } from '../actions';
 
 const PlayButton = props => (
     <>
@@ -12,7 +12,7 @@ const PlayButton = props => (
 function mapDispatchToProps(dispatch) {
     return {
         handleClick: () => {
-            dispatch(actionPlay());
+            dispatch(actionSetActivity('playing'));
         }
     }
 }

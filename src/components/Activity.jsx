@@ -2,12 +2,14 @@ import EatButton from "./EatButton";
 import PlayButton from "./PlayButton";
 import NapButton from "./NapButton";
 import Output from "./Output";
+import NameForm from "./NameForm";
 
 const Activity = (props) => {
     return (
         <>
-            <h1>Cat Reducers</h1>
+            <h1>Cat Reducers v2</h1>
             <Output/>
+            <NameForm/>
             <EatButton/>
             <PlayButton/>
             <NapButton/>
